@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario | Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="texto-general">
+
+    <header class="encabezado-principal">
+         <nav class="navbar navbar-expand-lg navbar-recetario">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img
+                    class="foto-logo"
+                    src="./imagenes/logo.webp"
+                    alt="Logo de Mi Recetario">
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuRecetario"
+                aria-controls="menuRecetario"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="menuRecetario">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/dulce.html">
+                            Dulce
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/salado.html">
+                            Salado
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/basicos.html">
+                            Básicos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/saludable.html">
+                            Saludable
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    </header>
+
+    <main class="contenido-principal">
+
+        <h1 class="titulo-principal">
+            Mi recetario: una recopilación de recetas de mi vida.
+        </h1>
+
+        <section class="seccion-presentacion">
+
+            <article class="articulo-presentacion">
+                <p class="parrafo-receta">
+                    La cocina interpela más allá de la comida. Cuenta momentos,
+                    personas y recuerdos. Es por ello que quería recopilar mis
+                    recetas en un lugar que perdure en el tiempo y las generaciones.
+                </p>
+            </article>
+
+            <img
+                class="imagen-presentacion"
+                src="./imagenes/familia-cocina.jpg"
+                alt="Imagen de un adulto y un niño cocinando juntos">
+
+        </section>
+
+
+        <section class="seccion-informativa">
+
+            <h2 class="subtitulo-receta">
+                ¿Qué podés encontrar en nuestra página?
+            </h2>
+
+            <article class="articulo-informativo">
+                <ul class="lista-categorias">
+                    <li>Recetas dulces como tortas, tartas, cookies y delicias.</li>
+                    <li>Recetas saladas para ideas de almuerzos y cenas.</li>
+                    <li>Básicos de la cocina, como las masas más claves y rellenos multiusos.</li>
+                    <li>Un apartado para aquellos como mi mamá, que siempre buscan la alternativa saludable.</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section class="seccion-destacadas">
+
+            <h2 class="subtitulo-categoria">Recetas destacadas</h2>
+
+            <div class="grilla-recetas">
+
+                <article class="tarjeta-receta tarjeta-frutilla">
+                    <img class="imagen-general foto-receta"
+                        src="./imagenes/tarta_fr_1.JPG"
+                        alt="Tarta de frutilla">
+
+                    <h3 class="subtitulo-receta">Tarta de frutilla</h3>
+
+                    <a class="enlace-receta" href="./pages/dulce.html#tarta-frutilla">
+                        Ver receta
+                    </a>
+                </article>
+
+                <article class="tarjeta-receta tarjeta-bondiola">
+                    <img class="imagen-general foto-receta"
+                        src="./imagenes/bondiola.JPG"
+                        alt="Bondiola al horno">
+
+                    <h3 class="subtitulo-receta">Bondiola al horno</h3>
+
+                    <a class="enlace-receta" href="./pages/salado.html#bondiola">
+                        Ver receta
+                    </a>
+                </article>
+
+                <article class="tarjeta-receta tarjeta-budin">
+                    <img class="imagen-general foto-receta"
+                        src="./imagenes/budin_banana.jpg"
+                        alt="Budín de banana">
+
+                    <h3 class="subtitulo-receta">Budín de banana</h3>
+
+                    <a class="enlace-receta" href="./pages/saludable.html#budin-banana">
+                        Ver receta
+                    </a>
+                </article>
+
+                <article class="tarjeta-receta tarjeta-chocolate">
+                    <img class="imagen-general foto-receta"
+                        src="./imagenes/torta_ch.jpg"
+                        alt="Torta de chocolate">
+
+                    <h3 class="subtitulo-receta">Torta de chocolate</h3>
+
+                    <a class="enlace-receta" href="./pages/dulce.html#torta-chocolate">
+                        Ver receta
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOTSTRAP -->
+
+        <section class="seccion-destacadas">
+
+            <h2 class="subtitulo-categoria">
+                Galería de recetas
+            </h2>
+
+            <div
+                id="carouselRecetas"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+            
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./imagenes/tarta_fr_1.JPG"
+                            class="d-block w-100"
+                            alt="Tarta de frutilla">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/torta_ch.jpg"
+                            class="d-block w-100"
+                            alt="Torta de chocolate">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/bondiola.JPG"
+                            class="d-block w-100"
+                            alt="Bondiola al horno">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/tarta-zuchini.png"
+                            class="d-block w-100"
+                            alt="Tarta de zucchini">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/budin_banana.jpg"
+                            class="d-block w-100"
+                            alt="Budín de banana">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/galletas_arroz.jpg"
+                            class="d-block w-100"
+                            alt="Galletas de arroz">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/masa_sablee.jpg"
+                            class="d-block w-100"
+                            alt="Masa sablée">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagenes/pastelera.jpg"
+                            class="d-block w-100"
+                            alt="Crema pastelera">
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselRecetas"
+                    data-bs-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselRecetas"
+                    data-bs-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <ul class="lista-redes">
+            <li> <a href="https://www.instagram.com/maggiealmiron_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer">
+                 <img class="foto-logo" src="./imagenes/instagram.png" alt="Logo de Instagram">
+                </a>
+            </li>
+        </ul>
+
+        <p class="texto-pie">Todos los derechos reservados</p>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
